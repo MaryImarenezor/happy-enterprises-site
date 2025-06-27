@@ -2,25 +2,25 @@
 import Layout from "../layouts/layout.astro"
 import Button from "../components/Button.astro"
 import ViewAll from "../components/products/ViewAll.astro"
-import Banner from "../components/Banner.astro"
 import Footer from "../components/Footer.astro"
+import DetailedProduct from "../components/products/DetailedProduct.astro"
 import Header from "../components/Header.astro"
 ---
 
-<Layout pageTitle="Home">
-  <Header />
+<Layout>
+    <Header />
 
-  <Banner />
-  <ViewAll />
+    <DetailedProduct />
+    <ViewAll />
 
-  <Button />
-  <Footer />
+    <Button />
+    <Footer />
 </Layout>
 
 <style>
   * {
-      border-style: solid;
-      border-width: 6px;
-      border-color: aqua;
-  }
+        border-style: solid;
+        border-width: 6px;
+        border-color: aqua;
+    }
 </style>

@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/layout.astro"
+import Button from "../components/Button.astro"
+import Footer from "../components/Footer.astro"
+import Filter from "../components/Filter.astro"
+import ProductsGrid from "../components/products/ProductsGrid.astro"
+import Header from "../components/Header.astro"
+import Heading from "../components/Heading.astro"
+---
+
+<Layout>
+    <Header />
+
+    <Heading />
+    <Filter />
+    <ProductsGrid />
+
+    <Button />
+    <Footer />
+</Layout>
+
+<style>
+  * {
+        border-style: solid;
+        border-width: 6px;
+        border-color: aqua;
+    }
+</style>

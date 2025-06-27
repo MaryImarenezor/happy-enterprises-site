@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+
+const {pageTitle = " "} = Astro.props;
+---
+
+<html>
+    <head>
+        <!--- add snipcart HTML code here -->
+        <title>Happy Enterprises | {pageTitle}</title>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>
+
+<style>
+    * {
+        font-family: Verdana, sans-serif;
+    }
+</style>
