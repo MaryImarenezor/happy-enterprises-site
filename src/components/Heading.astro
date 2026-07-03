@@ -1,3 +1,19 @@
 ---
+const {navbarTitle = "Lorem", navbarSubtitle = "Lorem Ippusm Lorem Ipusm Lorem Ipusm"} = Astro.props;
 ---
-<p>heading componet</p>
+
+<div class="flex flex-col items-center p-10 bg-amber-400">
+    <h1 class="text-7xl">{navbarTitle}</h1>
+    <br />
+    <p class="text-lg">{navbarSubtitle}</p>
+    <br />
+</div>
+
+
+<style>
+    * {
+        border-style: solid;
+        border-width: 3px;
+        border-color: rgb(131, 89, 9);
+    }
+</style>
