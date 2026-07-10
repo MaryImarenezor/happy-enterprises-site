@@ -1,3 +1,21 @@
 ---
+import ProductsGrid from "./ProductsGrid.astro"
 ---
 <p class="bg-blue-300">viewall component</p>
+
+<div class="flex flex-col w-fit">
+
+    <p>Related Items</p>
+    <ProductsGrid />
+    <input class="w-30 justify-self-end" type="button" value="View All --->">
+
+</div>
+
+
+<style>
+    * {
+        border-style: solid;
+        border-width: 3px;
+        border-color: rgb(190, 36, 139);
+    }
+</style>

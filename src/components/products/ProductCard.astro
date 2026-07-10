@@ -1,0 +1,12 @@
+---
+const {productTitle = "product title", priceTag = "$0.00"} = Astro.props;
+---
+
+
+<div class="flex flex-col w-40 p-5">
+    <img class="w-fit" src="/img/Rectangle 6.svg" alt="product image"/>
+
+    <b><p>{productTitle}</p></b>
+    <i><p>{priceTag}</p></i>
+
+</div>

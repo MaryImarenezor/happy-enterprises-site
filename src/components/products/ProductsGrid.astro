@@ -1,3 +1,141 @@
 ---
+import ProductCard from "./ProductCard.astro"
+
+const fakeData = [
+    {
+        title: "Item 1",
+        price: "$4.00"
+    },
+    {
+        title: "Item 2",
+        price: "$8.00"
+    },
+    {
+        title: "Item 3",
+        price: "$6.70"
+    },
+        {
+        title: "Item 1",
+        price: "$4.00"
+    },
+    {
+        title: "Item 2",
+        price: "$8.00"
+    },
+    {
+        title: "Item 3",
+        price: "$6.70"
+    },
+            {
+        title: "Item 1",
+        price: "$4.00"
+    },
+    {
+        title: "Item 2",
+        price: "$8.00"
+    },
+    {
+        title: "Item 3",
+        price: "$6.70"
+    },
+            {
+        title: "Item 1",
+        price: "$4.00"
+    },
+    {
+        title: "Item 2",
+        price: "$8.00"
+    },
+    {
+        title: "Item 3",
+        price: "$6.70"
+    },
+            {
+        title: "Item 1",
+        price: "$4.00"
+    },
+    {
+        title: "Item 2",
+        price: "$8.00"
+    },
+    {
+        title: "Item 3",
+        price: "$6.70"
+    },
+            {
+        title: "Item 1",
+        price: "$4.00"
+    },
+    {
+        title: "Item 2",
+        price: "$8.00"
+    },
+    {
+        title: "Item 3",
+        price: "$6.70"
+    },
+            {
+        title: "Item 1",
+        price: "$4.00"
+    },
+    {
+        title: "Item 2",
+        price: "$8.00"
+    },
+    {
+        title: "Item 3",
+        price: "$6.70"
+    }
+    
+];
+
+const fakeData2 = [
+    {
+        title: "Item 1",
+        price: "$4.00"
+    },
+    {
+        title: "Item 2",
+        price: "$8.00"
+    },
+    {
+        title: "Item 3",
+        price: "$6.70"
+    },
+        {
+        title: "Item 4",
+        price: "$4.00"
+    },
+    {
+        title: "Item 5",
+        price: "$8.00"
+    },
+    {
+        title: "Item 6",
+        price: "$6.70"
+    },
+            {
+        title: "Item 7",
+        price: "$4.00"
+    }
+    
+];
+
+
 ---
-<p class="bg-purple-300">products grid component</p>
+
+<main class="flex flex-wrap w-6xl h-auto">
+    {
+    fakeData2.map((e) => (<ProductCard productTitle={e.title} priceTag={e.price} />))
+    }
+</main>
+
+
+
+<style>
+    * {
+        border-style: solid;
+        border-width: 3px;
+        border-color: rgb(98, 15, 71);
+    }
+</style>
