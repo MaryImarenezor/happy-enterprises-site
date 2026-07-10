@@ -1,10 +1,11 @@
 ---
 import ProductsGrid from "./ProductsGrid.astro"
+const {gridLabel = "Related Items" } = Astro.props;
 ---
 
 <div class="flex flex-col w-fit">
 
-    <p>Related Items</p>
+    <p>{gridLabel}</p>
     <ProductsGrid />
     <a class="w-fit justify-end" href="https://www.google.com">
         <i><p>View All ---&gt;</p></i>
