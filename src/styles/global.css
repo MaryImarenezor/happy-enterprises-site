@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+
+@theme {
+    /*   text colors   */
+    --color-font-colour: #6d435a;
+
+    /*   heading/header/footer colors  */
+    --color-container-colour: #e69e9e;
+    --color-container-text-colour: #6d435a;
+
+
+    /*    main / aside colors   */
+    
+    
+}
