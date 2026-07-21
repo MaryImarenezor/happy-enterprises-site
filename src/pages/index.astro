@@ -10,9 +10,13 @@ import Header from "../components/Header.astro"
 <Layout pageTitle="Home">
   <Header />
 
-  <Banner />
-  <ViewAll gridLabel="Inverters" />
-  <ViewAll gridLabel="Solar Cameras" />
+  <main>
+    <Banner />
+    <b><h2 class="text-xl">Shop Products</h2></b>
+    <ViewAll gridLabel="Inverters" />
+    <ViewAll gridLabel="Solar Cameras" />
+  </main>
+
 
   <div class="absolute items-start">
     <Button />
